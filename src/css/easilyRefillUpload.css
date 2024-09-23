@@ -1,0 +1,39 @@
+.pharmacyBannerText
+{
+font-size: 44px;
+font-weight: 700;
+line-height: 60px;
+text-align: left;
+
+}
+.pharmacy_read_more
+{
+  background: linear-gradient(315deg, #367B39 29.53%, #8AB746 100%);
+
+}
+
+.font-upload-message
+{
+  
+font-size: 14px;
+font-weight: 300;
+text-align: center;
+
+}
+.wy-80
+{
+  width: 80%;
+}
+
+.upload_prescription {
+  /* width: Hug (133px)px;
+height: Hug (43px)px; */
+  padding: 10px 24px 11px 24px;
+  gap: 10px;
+  border-radius: 10px;
+  opacity: 0px;
+  background: #fff;
+  color: #F65B5F;
+
+
+}

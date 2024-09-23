@@ -1,0 +1,13 @@
+.pharmacyBannerText
+{
+font-size: 48px;
+font-weight: 700;
+line-height: 60px;
+text-align: left;
+
+}
+.pharmacy_read_more
+{
+  background: linear-gradient(315deg, #367B39 29.53%, #8AB746 100%);
+
+}

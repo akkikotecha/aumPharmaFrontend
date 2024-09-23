@@ -1,0 +1,39 @@
+.boxShadow
+{
+  box-shadow: 10px 10px 20px 0px #4C579B12;
+
+}
+.startext
+{
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+.titleText
+{
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.nameText
+{
+font-size: 30px;
+font-weight: 600;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+.cityText
+{
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.02em;
+text-align: left;
+
+}

@@ -1,0 +1,610 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+img {
+  max-width: none;
+}
+
+body {
+  background: transparent;
+  font-family: "Outfit", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.chat-window::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-window {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    /* @apply border-border; */
+  }
+
+  body {
+    /* @apply bg-background text-foreground; */
+    font-family: "Outfit", sans-serif !important;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+  }
+}
+
+.search_delivery {
+  font-size: 12px;
+}
+
+.css-bpeczb-MuiSelect-icon,
+.css-1ymh30m-MuiSelect-icon {
+  color: #000;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.12);
+}
+
+.search_dropdown {
+  font-size: 18px;
+  margin-bottom: -6px;
+  margin-top: -8px;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+
+.bg-gray-100 {
+  background: #F2F4F6;
+
+}
+
+.text-gray-500 {
+  font-weight: 500;
+}
+
+.w-50 {
+  width: 12rem;
+  ;
+}
+
+.header_care_plan {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.68px;
+  text-align: left;
+
+}
+
+.buy_now
+{
+  border: 2px solid #49893C;
+  color:#49893C;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.16px;
+  text-align: center;
+  
+}
+.read_more
+{
+  border: 2px solid #49893C;
+  color:#49893C;
+  font-size: 16px;
+  font-weight: 600;
+width: 142px;
+  text-align: center;
+  
+}
+.right-2 {
+  right: 5px;
+}
+.bottom-2 {
+  bottom: 1px;
+}
+.w-25
+{
+  width:100%;
+}
+.w-80 {
+  width: 24rem;
+}
+.originalPrice
+{
+  color: #767676!important;
+
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.upload_now {
+  /* width: Hug (133px)px;
+height: Hug (43px)px; */
+  padding: 10px 24px 11px 24px;
+  gap: 10px;
+  border-radius: 10px;
+  opacity: 0px;
+  background: linear-gradient(315deg, #367B39 29.53%, #8AB746 100%);
+  color: #fff;
+
+
+}
+
+.header_save_more {
+  font-size: 8.5px !important;
+  font-weight: 500;
+  text-align: left;
+  padding: 0px;
+  width: 69px;
+  height: 24px;
+  padding-left: 9.5px;
+  padding-top: 3.2px;
+  margin-top: 4px;
+  background: linear-gradient(315deg, #367B39 29.53%, #8AB746 100%);
+  margin-left: 8px;
+}
+.menu-font-set
+{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.64px;
+  text-align: left;
+
+}
+
+.text-gray-500 {
+  color: #000;
+}
+
+.chat-bubble {
+  background-color: #f1f1f1;
+  padding: 16px 28px;
+  -webkit-border-t-radius: 10px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-t-radius: 10px;
+  -moz-border-radius-bottomleft: 2px;
+  border-radius: 10px;
+  border-bottom-left-radius: 2px;
+  display: inline-block;
+}
+
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #ffc989;
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 7px;
+  display: inline-block;
+}
+
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color: #ffc989;
+  }
+
+  28% {
+    transform: translateY(-7px);
+    background-color: #ffa947;
+  }
+
+  44% {
+    transform: translateY(0px);
+    background-color: #f1f1f1;
+  }
+}
+
+.my-config {
+  --darkmode: 0;
+  --h-accent: 30;
+  --s-accent: 100%;
+  --l-accent: 50%;
+}
+
+.parsed-container img {
+  width: 100% !important;
+  border-radius: 20px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide the Leaflet logo */
+.leaflet-control-attribution {
+  display: none;
+}
+
+/* Hide the zoom control buttons */
+.leaflet-control-zoom {
+  display: none;
+}
+
+/* Layout css */
+/* global.css or the relevant CSS module */
+
+.layout {
+  width: 100%;
+}
+
+.navbar {
+  position: sticky;
+  /* Keep navbar fixed */
+  top: 0;
+  /* Align to top */
+  left: 0;
+  /* Align to left */
+  width: 100%;
+  /* Full width */
+  z-index: 10000000000;
+  /* Ensure it is on top of other content */
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  /* Sidebar occupies the first column */
+  grid-row: 2 / 3;
+  /* Sidebar is in the second row */
+  width: 326px;
+  /* Fixed width for sidebar */
+  background: #fff;
+  /* Sidebar background color */
+  position: absolute;
+  /* top: 117px;   */
+  /* bottom: 0; */
+  /* left:10px; */
+  /* overflow-y: auto;  */
+  z-index: 1;
+}
+
+.content {
+  /* grid-column: 2 / 3;  
+  grid-row: 2 / 3;   */
+  margin-left: 326px;
+  /* Match sidebar width */
+  padding: 20px;
+  overflow-y: auto;
+  /* Scroll if content overflows */
+  /* z-index: 1; */
+  position: relative;
+}
+
+.leaflet-container {
+  z-index: 0;
+}
+
+.modal-fullscreen .modal-body-fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  width: 100vw;
+  /* Full viewport width */
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offcanvas-overlap {
+  z-index: 1050 !important;
+  /* Higher than the default modal z-index (1040) */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* discover */
+
+.clip-path-custom {
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 0 50%);
+  /* Additional styles to ensure correct positioning and size */
+  position: relative;
+}
+
+.stories-container {
+  overflow-x: auto;
+  /* Allow horizontal scrolling */
+  white-space: nowrap;
+  /* Prevent wrapping of stories */
+  display: flex;
+  /* Align stories in a row */
+}
+
+.story-item {
+  display: inline-block;
+  /* Allow each story to be on a new line */
+  margin-right: 10px;
+  /* Spacing between stories */
+  vertical-align: middle;
+  /* Align stories vertically in the center */
+}
+
+.scroll-hidden {
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar in Internet Explorer and Edge */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar in WebKit browsers */
+}
+
+/* cookies */
+
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  /* Adjust as needed */
+  left: 20px;
+  /* Adjust as needed */
+  width: 508px;
+  height: 318.28px;
+  background: #fff;
+  border: 3px solid #1877f2;
+  border-radius: 10px;
+  z-index: 1000;
+  /* Ensure it's on top of other content */
+  opacity: 1;
+  transform: translateY(100%);
+  /* Start offscreen */
+  animation: slide-up 0.5s forwards;
+  /* Add animation */
+}
+
+.cookie-popup-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  /* For positioning the close button */
+}
+
+.cookie-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cookie-popup-title {
+
+  font-size: 39.2px;
+  font-weight: 500;
+  color: #1877f2;
+}
+
+.cookie-popup-body {
+
+  font-size: 21.17px;
+  font-weight: 500;
+  line-height: 32.93px;
+}
+
+.cookie-popup-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-popup-button {
+  width: 212.45px;
+  height: 53.31px;
+  border-radius: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.cookie-popup-button.accept {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.cookie-popup-button.reject {
+  background-color: #fff;
+  border: 2.35px solid #0162e0;
+  color: #0162e0;
+}
+
+.cookie-popup-close {
+  position: absolute;
+  top: 10px;
+  /* Adjust as needed */
+  right: 10px;
+  /* Adjust as needed */
+  cursor: pointer;
+  background: #fff;
+  border-radius: 10px 0 0 0;
+  padding: 3.33px;
+  /* border: 1px solid #1877F2; */
+}
+
+/* Animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.custom-right-bottom {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  /* Custom shadow */
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.responsive-container {
+  width: 100%;
+  /* Full width of its container */
+  max-width: 1000px !important;
+  /* Maximum width to prevent it from getting too wide */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+.gradient-text {
+  background: linear-gradient(89.22deg, #ff0080 0%, #7928ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.break-lines {
+  white-space: pre-line;
+}
+
+.placeholder-black input::placeholder {
+  color: black;
+}
+
+.clip-path-polygon {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+}
+
+.accordion-header {
+
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+}
+
+/* Hide scrollbars */
+.scroll-hidden::-webkit-scrollbar {
+  width: 0;
+}
+
+.scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
