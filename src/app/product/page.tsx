@@ -5,12 +5,7 @@ import Header from "@/components/header";
 import ProductList from "@/components/productPage/ProductList";
 import { useState } from "react";
 
-// Sample filters and product data
-const filters = {
-  categories: ['Medicines', 'Vitamins', 'Beauty & Health'],
-  priceRange: { min: 100, max: 1000 },
-  brands: ['Ridomaxx', 'Zingavita', 'Friska'],
-};
+
 
 const products = [
   {
