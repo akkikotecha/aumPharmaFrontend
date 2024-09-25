@@ -10,10 +10,17 @@ interface CardData {
 
 const Card: React.FC<CardData> = ({ categories }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const contentRefs = useRef<Array<HTMLDivElement | null>>([]); // Fix ref initialization for multiple elements
+
+  // Correct initialization of useRef for an array of div elements
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
+
+    // Optionally, scroll the accordion into view when opened
+    if (activeIndex !== index && contentRefs.current[index]) {
+      // contentRefs.current[index]?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (

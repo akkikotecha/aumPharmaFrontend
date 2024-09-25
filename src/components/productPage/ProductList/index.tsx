@@ -20,21 +20,21 @@ const ProductList = () => {
       name: 'Advacan 0.5mg Tablet',
       price: 897.39,
       oldPrice: 997.10,
-      image: '/images/advacan.jpg', // Replace with correct image path
+      image:'/homeImage/slide1.png', // Replace with correct image path
     },
     {
       id: 2,
       name: 'Prograf 0.5mg Capsule',
       price: 222.14,
       oldPrice: 231.40,
-      image: './homeImage/slide1.png', // Replace with correct image path
+      image: '/homeImage/slide1.png', // Replace with correct image path
     },
     {
       id: 3,
       name: 'Myfortic 180mg Tablet',
       price: 415.22,
       oldPrice: 519.00,
-      image: './homeImage/slide1.png', // Replace with correct image path
+      image: '/homeImage/slide1.png', // Replace with correct image path
     },
     // Add more products as needed...
   ];

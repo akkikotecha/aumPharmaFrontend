@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Navigation, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 // Define the Category Interface
 interface Category {
@@ -63,14 +64,14 @@ const SellingSwiper: React.FC<CategorySwiperProps> = ({ categories }) => {
             {/* Card Layout */}
             <div className="max-w-xs rounded-lg bg-white">
               <div className="relative">
-                <img src={category.image2} alt={category.title} className="rounded-lg w-full object-cover" />
+                <Image src={category.image2} alt={category.title} width={150} height={150} className="rounded-lg w-full object-cover" />
                 
                 {/* Cart Icon */}
                 <div className="absolute bottom-2 right-2 cartIcon text-white rounded-full">
                 <FontAwesomeIcon icon={faCartShopping} className="w-5 h-4"/>
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <img src={category.image} alt={category.title} className="object-cover " />
+                  <Image src={category.image} alt={category.title} width={150} height={150} className="object-cover " />
                 </div>
               </div>
               {/* Product Title */}

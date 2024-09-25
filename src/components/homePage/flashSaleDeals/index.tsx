@@ -7,18 +7,18 @@ import SwiperSelling from "@/components/homePage/SwiperSelling/Slider";
 
 const FlashSaleDealsSlider: React.FC = () => {
   const categories = [
-    { image: './homeImage/slide1.png',image2:'./homeImage/sellingBg.png', title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide2.png',image2:'./homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide3.png', image2:'./homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide4.png',image2:'./homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide5.png',image2:'./homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide6.png', image2:'./homeImage/sellingBg.png',title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide1.png', image2:'./homeImage/sellingBg.png',title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide2.png',image2:'./homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide3.png', image2:'./homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide4.png',image2:'./homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide5.png',image2:'./homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
-    { image: './homeImage/slide6.png',image2:'./homeImage/sellingBg.png', title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide1.png',image2:'/homeImage/sellingBg.png', title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide2.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide3.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide4.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide5.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide6.png', image2:'/homeImage/sellingBg.png',title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide1.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide2.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide3.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide4.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide5.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide6.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
   ];
 
   return (
