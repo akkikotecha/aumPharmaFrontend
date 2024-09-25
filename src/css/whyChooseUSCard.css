@@ -1,0 +1,38 @@
+.cardGray
+{
+  background: #F2F4F6;
+  
+  border-radius: 24px;
+}
+.whyChooseUsTitle
+{
+  font-size: 24px;
+  font-weight: 800;
+  text-align: left;
+  color: #000;
+  
+
+}
+
+.whyChooseUsDescription
+{
+ 
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: #000;
+  
+}
+.whyChooseUsButton
+{
+padding: 12px 20px 12px 20px;
+border-radius: 10px;
+opacity: 0px;
+box-shadow: 6px 6px 10px 0px #0000001A;
+background: #fff;
+color: #000;
+font-size: 14px;
+font-weight: 600;
+text-align: center;
+
+}

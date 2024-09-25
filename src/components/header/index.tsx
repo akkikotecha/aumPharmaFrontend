@@ -55,10 +55,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div>
     <header className="bg-white ">
       <div className="shadow-sm">
-      <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-0 flex items-center justify-between py-4 md:container md:mx-auto">
+      <div className="container-fluid px-10 flex items-center justify-between py-4">
         <div className="flex items-center space-x-6">
           <Image
             src="/homeImage/aum_logo.svg"
@@ -159,7 +158,7 @@ const Header: React.FC = () => {
       </div>
       </div>
       <div className="shadow-sm">
-            <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-0 grid grid-cols-2 items-center justify-between py-4 md:container md:mx-auto">
+            <div className="container-fluid px-10 grid grid-cols-2 items-center justify-between py-4 ">
         {/* Left side (Search bar) */}
           <div className="relative bg-gray-100 rounded-lg px-4 py-3 flex items-center justify-between w-90">
             <input
@@ -193,44 +192,45 @@ const Header: React.FC = () => {
               <span className="ml-3 text-gray-500">Order with prescription.</span>
             </button>
 
-            <button className="flex items-center space-x-2 text-black font-semibold py-2 px-4 rounded-full upload_now">
-            <span>Upload Now</span>
-          </button>
+            <button className="flex items-center space-x-2 text-white font-semibold py-2 px-4 rounded-full bg-gradient-to-r from-[#367B39] to-[#8AB746] opacity-100">
+              Upload Now
+            </button>
           </div>
       </div>
 
       </div>
       <div className="shadow-sm">
-      <div className="max-w-7xl mx-auto px-0 sm:px-0 lg:px-0 items-center justify-between py-4 md:container md:mx-auto">
-        <div className="flex items-center w-full">
-          {categories.map((category, index) => (
-            <div
-              className={`w-full ${index !== 0 ? 'ml-3' : ''}`}
-              key={index}
-               // Close on hover exit
-            >
-              <Select
-                value={selectedAddresses[category]}
-                onMouseEnter={() => handleMouseEnter(category)} // Open on hover
-                onMouseLeave={() => handleMouseLeave(category)}                variant="standard"
-                className="block text-md text-black w-full search_dropdown menu-font-set"
-                IconComponent={FaAngleDown}
-                disableUnderline
-                fullWidth
-                open={openSubmenus[category] === true} // Open if the submenu is marked as open
-                onClose={() => handleMouseLeave(category)} // Ensure it closes properly
+        <div className="container-fluid px-10 items-center justify-between py-4">
+          <div className="flex flex-wrap items-center w-full">
+            {categories.map((category, index) => (
+              <div
+                className={`w-full sm:w-auto ${index !== 0 ? 'ml-3' : ''} ${index > 0 ? 'mt-4 sm:mt-0' : ''}`}
+                key={index}
               >
-                <MenuItem value={category}>{category}</MenuItem>
-                {/* Add more MenuItem options as needed for submenus */}
-              </Select>
-            </div>
-          ))}
+                <Select
+                  value={selectedAddresses[category]}
+                  onMouseEnter={() => handleMouseEnter(category)} // Open on hover
+                  onMouseLeave={() => handleMouseLeave(category)} // Close on hover exit
+                  variant="standard"
+                  className="block text-md text-black w-full search_dropdown menu-font-set"
+                  IconComponent={FaAngleDown}
+                  disableUnderline
+                  fullWidth
+                  open={openSubmenus[category] === true} // Open if the submenu is marked as open
+                  onClose={() => handleMouseLeave(category)} // Ensure it closes properly
+                >
+                  <MenuItem value={category}>{category}</MenuItem>
+                  {/* Add more MenuItem options as needed for submenus */}
+                </Select>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+
+
 
     </header>
-    </div>
   );
 };
 
