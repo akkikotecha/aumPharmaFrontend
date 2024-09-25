@@ -1,11 +1,20 @@
 "use client"; // Necessary for Next.js client-side code
 
-import ProductList from "@/components/productPage/productListView"; // Adjust the path if necessary
+import ProductListView from "@/components/productPage/productListView"; // Adjust the path if necessary
 import { useState } from "react";
 
-export default function Home() {
+// Define the product type
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  oldPrice: number;
+  image: string;
+};
+
+const ProductList = () => {
   // Sample product data
-  const products = [
+  const products: Product[] = [
     {
       id: 1,
       name: 'Advacan 0.5mg Tablet',
@@ -30,20 +39,21 @@ export default function Home() {
     // Add more products as needed...
   ];
 
-  const [filteredProducts] = useState<typeof products>(products); // Using type of products
+  // Typing the state with Product[] (array of Product)
+  const [filteredProducts] = useState<Product[]>(products);
 
   return (
     <div className="min-h-screen flex">
-    
       {/* Main Layout */}
       <div className="flex w-full">
-        {/* Sidebar component (if needed) */}
-        
         {/* Product List */}
         <main className="w-3/4 p-4">
-          <ProductList products={filteredProducts} />
+          <ProductListView products={filteredProducts} />
         </main>
       </div>
     </div>
   );
 }
+
+
+export default ProductList;

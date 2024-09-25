@@ -3,30 +3,9 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ProductList from "@/components/productPage/ProductList";
-import { useState } from "react";
 
-
-
-const products = [
-  {
-    id: 1,
-    name: 'Advacan 0.5mg Tablet',
-    price: 897.39,
-    oldPrice: 997.10,
-    image: '/images/advacan.jpg', // Replace with actual image path
-  },
-  {
-    id: 2,
-    name: 'Prograf 0.5mg Capsule',
-    price: 222.14,
-    oldPrice: 231.40,
-    image: '/images/prograf.jpg', // Replace with actual image path
-  },
-  // Add more products as needed...
-];
 
 export default function Home() {
-  const [filteredProducts] = useState(products);
 
   return (
     <div className="min-h-screen">
@@ -98,7 +77,7 @@ export default function Home() {
 
         {/* Product List */}
         <main className="w-3/4 p-4">
-          <ProductList products={filteredProducts} />
+          <ProductList />
         </main>
       </div>
 
