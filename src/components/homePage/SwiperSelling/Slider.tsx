@@ -62,7 +62,7 @@ const SellingSwiper: React.FC<CategorySwiperProps> = ({ categories }) => {
         {categories.map((category, index) => (
           <SwiperSlide key={index}>
             {/* Card Layout */}
-            <div className="max-w-xs rounded-lg bg-white">
+            <div className="max-w-xs rounded-lg ">
               <div className="relative">
                 <Image src={category.image2} alt={category.title} width={150} height={150} className="rounded-lg w-full object-cover" />
                 

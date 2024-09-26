@@ -23,7 +23,7 @@ interface CardData {
 
 const Card: React.FC<CardData> = ({ data }) => {
   return (
-    <div className="category-swiper relative">
+    <div className="category-swiper relative happyClient">
       {/* Custom Previous and Next Arrows */}
       <div className="swiper-button-prev custom-prev-arrow">
         <svg
@@ -69,7 +69,7 @@ const Card: React.FC<CardData> = ({ data }) => {
         {" "}
         {data.map(({ title, star, name, imageUrl, city }, index) => (
           <SwiperSlide key={index}>
-            <div className="mx-4 bg-white boxShadow p-0 relative">
+            <div className="mx-4 bg-white boxShadow p-5 relative">
               {/* Rating */}
               <div className="flex items-center space-x-1 mb-3">
                 <FaStar className="startext text-yellow-400" />{" "}

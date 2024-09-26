@@ -5,37 +5,40 @@ import { useState } from "react";
 
 // Define the product type
 type Product = {
-  id: number;
-  name: string;
-  price: number;
-  oldPrice: number;
   image: string;
+  image2: string;
+  title: string;
+  price: string;
+  originalPrice: string;
 };
 
 const ProductList = () => {
   // Sample product data
   const products: Product[] = [
-    {
-      id: 1,
-      name: 'Advacan 0.5mg Tablet',
-      price: 897.39,
-      oldPrice: 997.10,
-      image:'/homeImage/slide1.png', // Replace with correct image path
-    },
-    {
-      id: 2,
-      name: 'Prograf 0.5mg Capsule',
-      price: 222.14,
-      oldPrice: 231.40,
-      image: '/homeImage/slide1.png', // Replace with correct image path
-    },
-    {
-      id: 3,
-      name: 'Myfortic 180mg Tablet',
-      price: 415.22,
-      oldPrice: 519.00,
-      image: '/homeImage/slide1.png', // Replace with correct image path
-    },
+    { image: '/homeImage/slide1.png',image2:'/homeImage/sellingBg.png', title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide2.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide3.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide4.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide5.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide6.png', image2:'/homeImage/sellingBg.png',title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide1.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide2.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide3.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide4.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide5.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide6.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide1.png',image2:'/homeImage/sellingBg.png', title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide2.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide3.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide4.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide5.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide6.png', image2:'/homeImage/sellingBg.png',title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide1.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide2.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.5mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide3.png', image2:'/homeImage/sellingBg.png',title: 'Prograf 0.5mg Capsule',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide4.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 180mg Tablet',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide5.png',image2:'/homeImage/sellingBg.png', title: 'Advacan 0.25mg Table',price:"2000",originalPrice:"2500" },
+    { image: '/homeImage/slide6.png',image2:'/homeImage/sellingBg.png', title: 'Myfortic 360mg Tablet',price:"2000",originalPrice:"2500" },
     // Add more products as needed...
   ];
 
@@ -43,11 +46,11 @@ const ProductList = () => {
   const [filteredProducts] = useState<Product[]>(products);
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen w-full flex">
       {/* Main Layout */}
-      <div className="flex w-full">
+      <div className=" w-full">
         {/* Product List */}
-        <main className="w-3/4 p-4">
+        <main className="w-full p-4 ps-0 pe-6">
           <ProductListView products={filteredProducts} />
         </main>
       </div>

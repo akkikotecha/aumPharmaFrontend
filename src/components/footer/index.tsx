@@ -5,7 +5,7 @@ import { SiGoogleplay, SiAppstore } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 pt-10 mt-16">
+    <footer className="bg-gray-100 pt-10 mt-1">
       <div className="container-fluid  px-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* About Us Section */}

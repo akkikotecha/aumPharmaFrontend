@@ -9,7 +9,7 @@ img {
 }
 
 body {
-  background: transparent;
+  background: #fbfbfb;
   font-family: "Outfit", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
@@ -201,6 +201,18 @@ height: Hug (43px)px; */
   color: #fff;
 
 
+}
+
+.top_image {
+  position: absolute; /* or fixed if you want it to stay in the same spot even when scrolling */
+  top: 12vh; /* Use viewport-relative units or percentages */
+  left: 3.5vw;
+}
+
+.second_image {
+  position: absolute; /* or fixed */
+  bottom: 35%;
+  right: 7px;
 }
 
 .header_save_more {
@@ -607,4 +619,11 @@ height: Hug (43px)px; */
 .scroll-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+.w-74
+{
+  width: 18.8rem;
+  padding: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }

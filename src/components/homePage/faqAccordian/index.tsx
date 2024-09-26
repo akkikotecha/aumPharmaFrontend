@@ -20,7 +20,7 @@ const Card: React.FC<CardData> = ({ categories }) => {
   };
 
   return (
-    <div className="w-full px-16 mt-8">
+    <div className="w-full px-16 mt-8 mb-16">
       {categories.map((item, index) => (
         <div key={index} className="border-b">
           <button
