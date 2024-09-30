@@ -3,6 +3,11 @@
   background: #32409A;
   border-radius: 24px;
 }
+.greenGredient
+{
+  background: linear-gradient(315deg, #367B39 29.53%, #8AB746 100%);
+  border-radius: 24px;
+}
 
 .CardRed
 {

@@ -2,6 +2,7 @@
 import React from "react";
 import Slider from "@/components/productDetail/productSlider/Slider";
 import StarRatings from 'react-star-ratings';
+import {FaRupeeSign  } from "react-icons/fa"; // Font Awesome Icons
 
 import "@/css/swiperSelling.css"
 import "@/css/shopByCategory.css"
@@ -9,6 +10,7 @@ import SwiperSelling from "@/components/productDetail/productSwiperSelling/Slide
 import Card from '@/components/productDetail/productFaqAccordian/';
 import "@/css/productDescription.css"
 import ReviewCard from "@/components/productDetail/reviewCard/";
+import SubstitutesCard from "@/components/productDetail/substitutesCard/";
 import "@/css/faq.css";
 
 const productBanner: React.FC = () => {
@@ -42,6 +44,14 @@ const productBanner: React.FC = () => {
       answer: "You can order medicine online by visiting our website and following the instructions."
     },
     // Add more questions here...
+  ];
+
+  const substitutes = [
+    { name: "Advamab 100mg Injection", company: "Alkem Laboratories Ltd", price: "11802", discount: "65% cheaper" },
+    { name: "Avastimab 100mg Injection", company: "RPG Life Sciences Ltd", price: "18200", discount: "46% cheaper" },
+    { name: "Bevnexxa 100mg Injection", company: "Celon Laboratories Ltd", price: "10800", discount: "68% cheaper" },
+    { name: "Bevacirel 100mg Injection", company: "Reliance Life Sciences", price: "12356.89", discount: "64% cheaper" },
+    { name: "Avangio Injection", company: "PlasmaGen Biosciences P.", price: "13500", discount: "60% cheaper" },
   ];
   const categories = [
     { image: '/homeImage/slide1.png',image2:'/homeImage/sellingBg.png', title: 'Prograf 1mg hard capsule',price:"2000",originalPrice:"2500" },
@@ -128,10 +138,10 @@ const productBanner: React.FC = () => {
   return (
     <div>
     <div className="w-full grid grid-cols-12 gap-4 mt-3">
-    <div className="col-span-6">
+    <div className="col-span-5">
       <Slider images={medicalCenterImages} />
     </div>
-    <div className="col-span-6">
+    <div className="col-span-7">
        {/* Title Section */}
        <h1 className="text-xl font-bold text-gray-900">
         Contour Plus Elite Blood Glucose Monitoring System Glucometer with Contour Plus Blood Glucose Test Strip 20S Free
@@ -164,6 +174,10 @@ const productBanner: React.FC = () => {
     </div>
   </div>
    <div className="px-4 mt-12">
+   <h2 className="ClickDescription mb-4 cursor-pointer">Click here to view all substitutes</h2>
+
+    </div>
+   <div className="px-4 mt-4">
    {/* Description Header */}
    <h2 className="shopByCategory mb-4">Description</h2>
 
@@ -249,7 +263,22 @@ const productBanner: React.FC = () => {
      Get diabetes monitoring checks online from our pharmacy and secure your treatment. 
    </p>
  </div>
- <div className="max-w-lg w-100 mt-8 p-4">
+ <div className="w-full max-w-lg w-100 mt-8 p-4  mt-4">
+ <h2 className="text-xl font-bold mb-2">All substitutes</h2>
+      <p className="text-sm text-gray-500 mb-4">For informational purposes only. Consult a doctor before taking any medicines.</p>
+      <div className="mb-4 flex justify-between medicinename item-center">
+        <p className="font-bold ">Contour Plus Elite Blood Glucose...</p>
+        <p className="text-gray-500"><span className="text-lg font-semibold  flex items-center">
+                  <FaRupeeSign className="w-4 h-4 mr-0" /> {/* Adjust icon size and spacing */}
+                  27768/Injection
+                </span></p>
+      </div>
+
+        <SubstitutesCard
+        substitutes={substitutes}
+        />
+    </div>
+ <div className="max-w-lg w-100 mt-6 p-4">
       {/* Title */}
       <h2 className="shopByCategory mb-4">Ratings & Reviews</h2>
 
@@ -317,11 +346,14 @@ const productBanner: React.FC = () => {
         </div>
       </div>
     </div>
+    
+    
     <div className="w-full  mt-3">
         <ReviewCard
         reviews={reviews}
         />
     </div>
+    
     <div className="flex items-center justify-between w-full px-4 ">
       <div className="w-full px-0 mt-16">
         <div className="grid grid-cols-3 gap-4">

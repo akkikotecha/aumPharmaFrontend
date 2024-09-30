@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/header";
+import HeaderComponent from "@/components/header";
 import Banner from "@/components/homePage/homeBanner";
 import ShopCategory from "@/components/homePage/shopByCategory"
 import Trending from "@/components/homePage/trendingToday"
@@ -26,13 +26,14 @@ import HappyClients from "@/components/homePage/happyClients"
 import ShippinLocationSupport from "@/components/homePage/shippinLocationSupport"
 import WhyChooseUs from "@/components/homePage/whyChooseUs"
 import Faq from "@/components/homePage/faq"
+import MedicinesTreatmentHealth from "@/components/homePage/medicinesTreatmentHealth"
 import Footer from "@/components/footer/"
 
 export default function Home() {
 
   return (
     <div className="">
-          <Header></Header>
+          <HeaderComponent></HeaderComponent>
           <Banner></Banner>
           <ShopCategory></ShopCategory>
           <Trending></Trending>
@@ -57,6 +58,7 @@ export default function Home() {
           <HappyClients></HappyClients>
           <ShippinLocationSupport></ShippinLocationSupport>
           <WhyChooseUs></WhyChooseUs>
+          <MedicinesTreatmentHealth></MedicinesTreatmentHealth>
           <Faq></Faq>
           <Footer></Footer>
     </div>

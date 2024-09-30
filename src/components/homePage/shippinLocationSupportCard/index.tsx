@@ -27,7 +27,7 @@ const Card: React.FC<CardData> = ({ data }) => {
       </p>
       <div className="grid grid-cols-2 items-center gap-4">
   <div>
-    <Image src={imageUrl} height={50} width={50} alt="support" />
+  {imageUrl && (<Image src={imageUrl} height={50} width={50} alt="support" />) }
   </div>
 
   <div className="text-right">

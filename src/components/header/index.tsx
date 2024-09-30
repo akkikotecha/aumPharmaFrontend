@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaMapMarkerAlt, FaAngleDown, FaMobileAlt } from "react-icons/fa"; // Font Awesome Icons
 
-const Header: React.FC = () => {
+const HeaderComponent: React.FC = () => {
   const [address, setAddress] = useState("ahmedabad");
 
   const handleChange = (event: {
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white ">
+    <div  className="bg-white ">
       <div className="shadow-sm">
       <div className="container-fluid px-10 flex items-center justify-between py-4">
         <div className="flex items-center space-x-6">
@@ -230,8 +230,8 @@ const Header: React.FC = () => {
 
 
 
-    </header>
+    </div>
   );
 };
 
-export default Header;
+export default HeaderComponent;

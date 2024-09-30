@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ReduxProvider from "./storeProvider";
-
+import { BsWhatsapp } from "react-icons/bs";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,12 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body>
+      <Toaster position="top-right" />
 
-        <ReduxProvider>
-        {children}
-        </ReduxProvider>
+        <ReduxProvider>{children}</ReduxProvider>
+        <a
+          href="https://wa.me/yourphonenumber"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-4 right-4 bg-green-500 z-[999999] text-white p-3 rounded-full shadow-lg"
+          aria-label="Chat with us on WhatsApp">
+          <BsWhatsapp size={30} />
+        </a>
       </body>
     </html>
   );

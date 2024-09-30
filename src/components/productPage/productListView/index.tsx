@@ -51,10 +51,10 @@ const ProductListView: React.FC<ProductListProps> = ({ products }) => {
           </div>
 
           {/* Product Title */}
-          <h3 className="text-gray-700 text-sm mt-3 text-center">{product.title}</h3>
+          <h3 className="text-gray-700 text-sm mt-3">{product.title}</h3>
 
           {/* Price and Original Price */}
-          <div className="mt-1 flex items-center justify-center">
+          <div className="mt-1 flex items-center ">
             <span className="text-lg font-semibold text-black flex items-center">
               <FaRupeeSign className="w-4 h-4 mr-0" />
               {product.price}

@@ -29,7 +29,7 @@ export default function Home() {
       <div className="flex w-full mt-1">
         {/* Sidebar */}
         <div className="px-6 py-4">
-        <aside className="w-74 p-4 bg_gray_set shadow-md px-12">
+        <aside className="w-64 p-4 bg_gray_set shadow-md px-12">
           
           <div className="mb-1 mt-2 flex justify-between items-baseline">
             <h2 className="filter_sub_title">Overview</h2>
